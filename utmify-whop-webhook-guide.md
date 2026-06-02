@@ -9,7 +9,7 @@ Este documento explica como integrar as vendas da plataforma **Whop** com o rast
 ### 1. Rastreamento Principal (Via Navegador - Já Configurado)
 A página de agradecimento já possui a integração do Pixel da Utmify e o script de UTMs ativos com a sua chave de pixel `6a1e39c0710d91ec4444583a`. 
 Quando o cliente finaliza a compra no Whop e é redirecionado para a página de agradecimento com os parâmetros corretos na URL:
-`https://seudominio.com/?id={id}&email={email}&name={username}&price=39.99&currency=USD`
+`https://diamond-clothing-thank-you.vercel.app/?id={id}&email={email}&name={username}&price=39.99&currency=USD`
 
 O navegador executa automaticamente o evento de compra (`Purchase`) e a Utmify captura esse evento associando-o aos cookies de UTM que o cliente possuía ao entrar no site. **Essa etapa é o suficiente para rastrear a maioria das vendas do Meta Ads.**
 
